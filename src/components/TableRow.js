@@ -1,36 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./dataTable.css";
-const URL = "http://localhost:8009/";
 
 function TableRow({ data, type }) {
-  console.log(type);
-  // return (
-  //   <>
-  //     {type !== 5 ? (
-  //       <tbody>
-  //         <tr>
-  //           <th>{data.Id}</th>
-  //           <th>{data.first_name}</th>
-  //           <th>{data.last_name}</th>
-  //           <th>{data.email}</th>
-  //           <th>{data.gender}</th>
-  //           <th> $ {data.income}</th>
-  //           <th>{data.city}</th>
-  //           <th>{data.car}</th>
-  //           <th>{data.quote}</th>
-  //           <th> $ {data.phone_price}</th>
-  //         </tr>
-  //       </tbody>
-  //     ) : (
-  //       <tbody>
-  //         <tr>
-  //           <th>{data.city}</th>
-  //           <th> $ {data.income}</th>
-  //         </tr>
-  //       </tbody>
-  //     )}
-  //   </>
-  // );
 
   return (
     <>

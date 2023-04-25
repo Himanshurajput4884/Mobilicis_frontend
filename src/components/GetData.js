@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import DataTables from './DataTables';
 import axios from 'axios';
 import "./dataTable.css";
-const URL = 'http://localhost:8009/';
+const URL = 'https://mbs-backend.onrender.com/';
 
 
 function GetData() {
@@ -27,17 +27,6 @@ function GetData() {
       }, [type]);
     
     const arr = ["Male users have phone greater than 10,000", "Users whose last name starts with “M” and has a quote character length greater than 15 and email includes his/her last name.", "Users which have a car of brand “BMW”, “Mercedes” or “Audi” and whose email does not include any digit.", "Show the data of top 10 cities which have the highest number of users and their average income."];
-
-    console.log(data);
-
-  // return (
-  //   <div>
-  //       <div className='head'>
-  //           <h2> {arr[type-2]} </h2>
-  //       </div>
-  //       <DataTables data={data} type = {type}/>
-  //   </div>
-  // )
   return(
     <main class="table">
             <h1 style={{color:"#c8d5e3"}}>{arr[type-2]}</h1>

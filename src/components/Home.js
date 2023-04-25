@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import DataTables from './DataTables';
 import axios from "axios"
 import "./dataTable.css";
-const URL = "http://localhost:8009/";
+const URL = "https://mbs-backend.onrender.com/";
 
 function Home() {
   const [data, setData] = useState([]);
